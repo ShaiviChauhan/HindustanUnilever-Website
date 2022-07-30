@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+html { 
+  background: url(bg1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.navbar{
+    height: 100px;
+    width: 100%;
+    background: rgba(0,0,0,0.4); 
+}
+
+.logo{
+    width: 140px;
+    height: 80px;
+    padding: 10px 100px;
+   margin-top: 0;
+}
+
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+    line-height: 80px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px; 
+    padding: 6px 13px;
+    transition: .4s;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    background: rgb(110, 172, 230);
+    border-radius: 2px;
+}
+
+.wrapper1{
+  max-width: 750px;
+  width: 100%;
+  margin: 30px auto 0;
+  padding: 10px;
+}
+
+.wrapper1 {
+  background: #fff;
+  padding: 30px;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+}
+.title{
+  background: #015a80;
+  margin: -30px;
+  text-align: center;
+  color: white;
+  font-size: 19px;
+  margin-bottom: 35px;
+  padding: 10px;
+}
+
+.wrapper .form .inputfield{
+  margin-bottom: 25px;
+}
+
+.form_wrap.fullname,
+.form_wrap.select_box{
+  display: flex;
+}
+
+.form_wrap.fullname .inputfield,
+.form_wrap.select_box .inputfield{
+  width: 50%;
+}
+
+
+.form_wrap.fullname .inputfield:first-child,
+.form_wrap.select_box .inputfield:first-child{
+  margin-right: 4%;
+}
+
+.wrapper1 .form .inputfield label{
+  display: block;
+  margin-bottom: 5px;
+}
+
+.inputfield input,
+.inputfield select{
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #dadce0;
+  border-radius: 3px;
+}
+
+.inputfield input:focus{
+  border-color: #354a68;
+}
+
+.form_wrap.Ds,
+.form_wrap.select_box{
+  display: flex;
+}
+
+.form_wrap.Ds .inputfield,
+.form_wrap.select_box .inputfield{
+  width: 50%;
+}
+
+
+.form_wrap.Ds .inputfield:first-child,
+.form_wrap.select_box .inputfield:first-child{
+  margin-right: 4%;
+
+}
+
+.form_wrap.os,
+.form_wrap.select_box{
+  display: flex;
+}
+
+.form_wrap.os .inputfield,
+.form_wrap.select_box .inputfield{
+  width: 50%;
+}
+
+
+.form_wrap.os .inputfield:first-child,
+.form_wrap.select_box .inputfield:first-child{
+  margin-right: 2%;
+}
+
+.form_wrap.wu,
+.form_wrap.select_box{
+  display: flex;
+}
+
+.form_wrap.wu .inputfield,
+.form_wrap.select_box .inputfield{
+  width: 50%;
+}
+
+
+.form_wrap.wu .inputfield:first-child,
+.form_wrap.select_box .inputfield:first-child{
+  margin-right: 4%;
+}
+
+.btn input[type="submit"]{
+  background: #1598d4;
+  border: 1px solid #1598d4;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.wrapper .form .btn:hover{
+  background: #2da3ba;
+}

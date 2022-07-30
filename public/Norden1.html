@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUL Website</title>
+
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <script src="script1.js"></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <nav class="navbar">
+            <img class="logo" src="hul.logo.png">
+            <ul>
+                <li><a class="active" href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">LOGIN</a></li>
+                </ul>
+        </nav>
+
+        <body1>
+        <div class="wrapper1">
+
+            
+            <div class="title">
+                NORDEN-1
+            </div>
+            <div class="form">
+                <form action="/sign_up" method="POST" enctype="multipart/form-data">
+                    
+                    <div class="card-details">
+
+                        <div class="form_wrap fullname">
+                        <div class="inputfield" >
+                        <label> SHIFT: </label> 
+                    <input type="text" class="box" id="shift" name="shift" placeholder="Shift" required />
+                    </div>
+                    <br>
+
+                    <div class="inputfield" >
+                        <label>  NAME: </label> 
+                    <input type="text" class="box" id="name" name="name" placeholder="Name" required />
+                    </div>
+                    <br>
+                    </div>
+
+                    <div class="form_wrap Ds">
+                    <div class="inputfield">
+                        <label> DATE: </label> 
+                    <input type="date" class="box" id="date" name="date" placeholder="Date" required />
+                    </div>
+                    <br>
+
+                    <div class="inputfield" id="sku">
+                        <label>  SKU: </label> 
+                    <input type="text" class="box" id="sku" name="sku" placeholder="SKU" required />
+                    </div>
+                    <br>
+                </div>
+
+                <div class="form_wrap os">
+                    <div class="inputfield" >
+                        <label> OPERATOR: </label> 
+                    <input type="text" class="box" id="operator" name="operator" placeholder="Operator" required />
+                    </div>
+                    <br>
+
+
+                    <table align="center" > 
+                        <tr>
+                        <td>
+                            
+        <div class="inputfield" >
+            <label for="sparepart">SPARE PART</label>
+                    <div class="custom_select" >
+                        <select id="SpareParts" onchange="showImg()" name="SpareParts" style="width: 310px;" >
+                            <option value="Spare Parts">Select Spare Parts</option>
+                            <option value="1">Part1</option>
+                            <option value="2">Part2</option>
+                            <option value="3">Part3</option>
+                            <option value="4">Part4</option>
+                            <option value="5">Part5</option>
+                        </select>
+                        </div>
+        </div>
+
+                    </td>
+                </tr>
+                <tr>
+                <td>
+                    <img src="hul.logo.png" hidden id="img1" width="400" height="200">
+                    <img src="hul.logo.png" hidden id="img2" width="400" height="200">
+                    <img src="bg.jpg" hidden id="img3" width="400" height="200">
+                </td>
+                </tr>
+                </table>
+                </div>
+                
+
+               
+                <div>
+                <h3>*If suitable part is not available in above list, then fill the below details: </h3>
+                
+            </div>
+            <br>
+ 
+            <div class="form_wrap wu">
+            <div class="inputfield" >
+                <label>  WHICH PART: </label> 
+                <input type="text" class="box" id="whichpart" name="whichpart" placeholder="WhichPart"  />
+            </div>    
+                <br>
+
+                <div class="inputfield" >
+                    <label>  UPLOAD PHOTO OF SPARE PART: </label> 
+                    <input type="file" class="box" id="photo" name="photo"  />
+                </div>
+                    <br>
+                </div>
+
+                    <div class="inputfield" >
+                    <label>WHY?</label>
+                    <textarea id="why" name="why" rows="6" cols="50" class="textarea" style="width: 100%; max-width: 100%;" >
+                    </textarea>
+                </div>
+  
+                <div class="btn" >
+                    <input type="submit" value="Submit" id="submit" class="btn"/>
+               
+                </form>
+            </div>
+        </div>
+            
+            </div>
+        
+</body1>
+
+    </div>
+</body>
+
+</html>
