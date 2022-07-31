@@ -1,17 +1,15 @@
 var express = require("express")
-const fileUpload = require('express-fileupload');
 var bodyParser = require("body-parser")
 var mongoose = require("mongoose")
 const app = express()
 
-app.use(fileUpload());
 app.use(bodyParser.json())
 app.use(express.static('public'))
 app.use(bodyParser.urlencoded({
     extended:true
 }))
 
-mongoose.connect('mongodb://localhost:27017/mydb',{
+mongoose.connect('mongodb://localhost:27017/mydb1',{
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
@@ -40,18 +38,9 @@ app.post("/sign_up",(req,res)=>{
         "operator" : operator,
         "SpareParts":SpareParts,
         "whichpart":whichpart,
-        "photo":req.files.photo,
+        "photo":photo,
         "why":why
     }
-
-    photo = req.files.photo;
-    uploadPath = __dirname + '/public/uploads/' + photo.name;
-  
-    // Use the mv() method to place the file somewhere on your server
-    photo.mv(uploadPath, function(err) {
-      if (err)
-        return res.status(500).send(err);
-    });
 
     db.collection('users').insertOne(data,(err,collection)=>{
         if(err){
